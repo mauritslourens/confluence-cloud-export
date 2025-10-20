@@ -22,3 +22,9 @@ jobs:
   
         - name: create services overview
           run: python3 .github/workflows/scripts/Confluence-FO-Export.py ${{ secrets.CONFLUENCE_TOKEN }} services
+        
+        - uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808 # v4.3.3
+          with:
+            name: Oplevering_Escrow
+            path: Services.pdf
+            retention-days: 5
