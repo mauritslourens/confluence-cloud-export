@@ -1,0 +1,2 @@
+atlassian-python-api==4.0.7
+pypdf==3.17.4
